@@ -28,8 +28,8 @@ Siga os passos abaixo para configurar e executar o backend em sua máquina local
 > DB_PASSWORD=suasenha
 > DB_NAME=seubanco
 - Inicie o servidor:
-> npm start
-O servidor estará disponível em http://localhost:3000.
+> npm start  
+O servidor estará disponível em http://localhost:3000.  
 
 ### Rotas da API
 - Aulas
