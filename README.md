@@ -33,15 +33,14 @@ O servidor estará disponível em http://localhost:3000.
 
 ### Rotas da API
 - Aulas
-> GET /aulas - Obtém todas as aulas.
-> GET /aulas/:id - Obtém uma aula por ID.
-> POST /aulas - Cria uma nova aula.
-> DELETE /aulas/:id - Remove uma aula por ID.
+> GET /aulas - Obtém todas as aulas.  
+> GET /aulas/:id - Obtém uma aula por ID.  
+> POST /aulas - Cria uma nova aula.  
+> DELETE /aulas/:id - Remove uma aula por ID.  
 - Scripts
-> GET /scripts - Obtém todos os scripts.
-> GET /scripts/:id - Obtém um script por ID.
-> POST /scripts - Cria um novo script.
-> DELETE /scripts/:id - Remove um script por ID.
+> GET /scripts - Obtém todos os scripts.  
+> GET /scripts/:id - Obtém um script por ID.  
+> POST /scripts - Cria um novo script.  
+> DELETE /scripts/:id - Remove um script por ID.  
 - Usuários
-> GET /users/:id - Obtém um usuário por ID.
-Contribuindo
+> GET /users/:id - Obtém um usuário por ID.  
