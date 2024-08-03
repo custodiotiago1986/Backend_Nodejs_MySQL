@@ -19,15 +19,15 @@ createUserTable();
 
 module.exports = {
   getAllUsers: (callback) => {
-    connection.query('SELECT * FROM User', callback);
+    connection.query('SELECT * FROM users', callback);
   },
   getUserById: (id, callback) => {
-    connection.query('SELECT * FROM User WHERE id = ?', [id], callback);
+    connection.query('SELECT * FROM users WHERE id = ?', [id], callback);
   },
   createUser: (user, callback) => {
-    connection.query('INSERT INTO User SET ?', user, callback);
+    connection.query('INSERT INTO users SET ?', user, callback);
   },
   deleteUser: (id, callback) => {
-    connection.query('DELETE FROM User WHERE id = ?', [id], callback);
+    connection.query('DELETE FROM users WHERE id = ?', [id], callback);
   }
 };
