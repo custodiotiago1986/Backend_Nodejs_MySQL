@@ -1,6 +1,6 @@
 const connection = require('../config/db');
 
-// Criação da tabela User
+// Criação da tabela users
 const createUserTable = () => {
   const query = `
     CREATE TABLE IF NOT EXISTS users (
