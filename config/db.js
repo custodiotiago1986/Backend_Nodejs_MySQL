@@ -1,12 +1,16 @@
 require('dotenv').config();
-
 const mysql = require('mysql2');
+const { URL } = require('url');
 
+// Parse the DATABASE_URL
+const dbUrl = new URL(process.env.DATABASE_URL);
+
+// Cria a conexão com base nos dados extraídos da URL
 const connection = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME
+  host: dbUrl.hostname,
+  user: dbUrl.username,
+  password: dbUrl.password,
+  database: dbUrl.pathname.substring(1) // Remove a primeira barra da pathname
 });
 
 connection.connect((err) => {
