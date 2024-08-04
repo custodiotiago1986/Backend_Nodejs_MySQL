@@ -1,5 +1,5 @@
-## Backend do Site da Profa. Priscila
-Este backend é responsável por gerenciar o conteúdo das aulas, scripts em R e fornecer um espaço de contato para alunos. Foi desenvolvido com Node.js e Express, e utiliza um banco de dados MySQL para armazenar informações.
+## Backend com Node.js + MySQL
+Exemplo que era o backend do Site da Priscila antes de eu migrar para uma nova aplicação. Nessa versão temos um backend com Node.js (Express) e MySQL.  Roda localmente, foi feito deploy na Azure mas atualmente está descontinuado na nuvem.  
 
 ### Estrutura do Projeto
 - **config/db.js**: Configuração e conexão com o banco de dados MySQL.
